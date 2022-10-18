@@ -48,18 +48,6 @@ class FlowLayoutCollectionViewController: UICollectionViewController {
             
             cell.contentConfiguration = content //UIContentConfiguration
         })
-
-//        for i in 1...10 {
-//            let task = Todo(title: "테스트 번호 \(i)", detail: "테스트 번호 \(i)번의 디테일")
-//
-//            try! localeRealm.write {
-//                localeRealm.add(task)
-//            }
-//        }
-        
-        
-        
-        
         
     }
     
