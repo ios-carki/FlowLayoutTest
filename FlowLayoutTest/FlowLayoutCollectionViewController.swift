@@ -9,12 +9,25 @@ import UIKit
 
 import RealmSwift
 
+struct User {
+    let name: String
+    let age: Int
+}
+
 class FlowLayoutCollectionViewController: UICollectionViewController {
+    
+    var list = [
+        User(name: "뽀로로", age: 3),
+        User(name: "에디", age: 13),
+        User(name: "해리포터", age: 33),
+        User(name: "도라에몽", age: 5)
+    ]
     
     let localeRealm = try! Realm()
     var tasks: Results<Todo>!
     
     var cellRegisteration: UICollectionView.CellRegistration<UICollectionViewListCell, Todo>!
+    var cellRegisteration2: UICollectionView.CellRegistration<UICollectionViewListCell, User>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,31 +48,57 @@ class FlowLayoutCollectionViewController: UICollectionViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: configuration)
         collectionView.collectionViewLayout = layout
         
+        
+        
         cellRegisteration = UICollectionView.CellRegistration(handler: { cell, indexPath, itemIdentifier in
-            
+
             var content = cell.defaultContentConfiguration() //UIListContentConfiguration
-            content.image = UIImage(systemName: "person.fill")
-            content.imageProperties.tintColor = .orange
             
-            content.text = itemIdentifier.title
-            content.textProperties.color = .brown
-            
-            content.secondaryText = itemIdentifier.detail
+            if indexPath.section == 0 {
+                content.image = UIImage(systemName: "person.fill")
+                content.imageProperties.tintColor = .orange
+                content.text = itemIdentifier.title
+                content.textProperties.color = .brown
+
+                content.secondaryText = itemIdentifier.detail
+
+            }
             
             cell.contentConfiguration = content //UIContentConfiguration
         })
         
+        cellRegisteration2 = UICollectionView.CellRegistration(handler: { cell, indexPath, itemIdentifier in
+            var content2 = cell.defaultContentConfiguration()
+            content2.text = itemIdentifier.name
+            cell.contentConfiguration = content2 //UIContentConfiguration
+        })
+        
+    }
+    
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tasks.count
+        
+        if section == 0 {
+            return tasks.count
+        } else {
+            return list.count
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = tasks[indexPath.item]
-        let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegisteration, for: indexPath, item: item)
-        
-        return cell
+        if indexPath.section == 0 {
+            let item = tasks[indexPath.item]
+            let cell = collectionView.dequeueConfiguredReusableCell(using: cellRegisteration, for: indexPath, item: item)
+            
+            return cell
+        } else {
+            let item2 = list[indexPath.item]
+            let cell2 = collectionView.dequeueConfiguredReusableCell(using: cellRegisteration2, for: indexPath, item: item2)
+            return cell2
+        }
     }
 
     
