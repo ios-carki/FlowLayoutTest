@@ -27,6 +27,16 @@ class MainViewController: BaseViewController {
         
         mainView.mainCollectionView.delegate = self
         mainView.searchBar.delegate = self
+        
+        mainView.settingViewButton.addTarget(self, action: #selector(gotoSettingView), for: .touchUpInside)
+    }
+    
+    @objc func gotoSettingView() {
+        let vc = SettingViewController()
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 }
 

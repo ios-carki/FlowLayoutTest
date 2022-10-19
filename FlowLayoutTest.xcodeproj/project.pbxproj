@@ -12,6 +12,8 @@
 		C3A7FCA928FFEDD10015F744 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3A7FCA828FFEDD10015F744 /* SnapKit */; };
 		C3A7FCAB28FFEE3F0015F744 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCAA28FFEE3F0015F744 /* BaseViewController.swift */; };
 		C3A7FCAD28FFEE470015F744 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCAC28FFEE470015F744 /* MainViewController.swift */; };
+		C3A7FCB0290015430015F744 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCAF290015430015F744 /* SettingView.swift */; };
+		C3A7FCB22900154E0015F744 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCB12900154E0015F744 /* SettingViewController.swift */; };
 		C3F1DE8628FE84C7002AA543 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1DE8528FE84C7002AA543 /* AppDelegate.swift */; };
 		C3F1DE8828FE84C7002AA543 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1DE8728FE84C7002AA543 /* SceneDelegate.swift */; };
 		C3F1DE8A28FE84C7002AA543 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F1DE8928FE84C7002AA543 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		C3A7FCA528FFED510015F744 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C3A7FCAA28FFEE3F0015F744 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C3A7FCAC28FFEE470015F744 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C3A7FCAF290015430015F744 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C3A7FCB12900154E0015F744 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C3F1DE8228FE84C7002AA543 /* FlowLayoutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowLayoutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F1DE8528FE84C7002AA543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F1DE8728FE84C7002AA543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3A7FCAE290015390015F744 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C3A7FCAF290015430015F744 /* SettingView.swift */,
+				C3A7FCB12900154E0015F744 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		C3F1DE7928FE84C7002AA543 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 		C3F1DE8428FE84C7002AA543 /* FlowLayoutTest */ = {
 			isa = PBXGroup;
 			children = (
+				C3A7FCAE290015390015F744 /* Setting */,
 				C3F1DE8528FE84C7002AA543 /* AppDelegate.swift */,
 				C3F1DE8728FE84C7002AA543 /* SceneDelegate.swift */,
 				C3F1DE8928FE84C7002AA543 /* ViewController.swift */,
@@ -172,6 +186,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F1DE9F28FE8526002AA543 /* FlowLayoutCollectionViewController.swift in Sources */,
+				C3A7FCB22900154E0015F744 /* SettingViewController.swift in Sources */,
+				C3A7FCB0290015430015F744 /* SettingView.swift in Sources */,
 				C3A7FCA628FFED510015F744 /* MainView.swift in Sources */,
 				C3F1DE8A28FE84C7002AA543 /* ViewController.swift in Sources */,
 				C3F1DE8628FE84C7002AA543 /* AppDelegate.swift in Sources */,

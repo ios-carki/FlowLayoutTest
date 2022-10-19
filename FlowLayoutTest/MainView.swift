@@ -31,8 +31,14 @@ class MainView: BaseView {
         return view
     }()
     
+    let settingViewButton: UIButton = {
+        let view = UIButton()
+        view.setTitle("설정뷰로 이동", for: .normal)
+        return view
+    }()
+    
     override func configureUI() {
-        [searchBar, mainCollectionView].forEach {
+        [searchBar, mainCollectionView, settingViewButton].forEach {
             self.addSubview($0)
         }
     }
@@ -44,7 +50,13 @@ class MainView: BaseView {
         
         mainCollectionView.snp.makeConstraints { make in
             make.top.equalTo(searchBar.snp.bottom)
+            make.leading.trailing.equalTo(safeAreaLayoutGuide)
+        }
+        
+        settingViewButton.snp.makeConstraints { make in
+            make.top.equalTo(mainCollectionView.snp.bottom)
             make.leading.trailing.bottom.equalTo(safeAreaLayoutGuide)
+            make.height.equalTo(40)
         }
     }
 }
