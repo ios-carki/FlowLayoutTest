@@ -70,6 +70,8 @@ class FlowLayoutCollectionViewController: UICollectionViewController {
         cellRegisteration2 = UICollectionView.CellRegistration(handler: { cell, indexPath, itemIdentifier in
             var content2 = cell.defaultContentConfiguration()
             content2.text = itemIdentifier.name
+            
+            content2.secondaryText = "\(itemIdentifier.age)살"
             cell.contentConfiguration = content2 //UIContentConfiguration
         })
         
