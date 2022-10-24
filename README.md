@@ -1,5 +1,9 @@
 # CompositionalLayout 실습
 
+### 설정 뷰 추가(Array Data + CollectionView Compositional Layout(Only Code Base)
+
+https://user-images.githubusercontent.com/44957712/196683782-2c6f2867-f1ab-4cf8-8e78-4316aafd2ed8.mov
+
 ### 데이터 1개 + 컴포지셔널 컬렉션뷰 레이아웃(Code Base)
 
 <img width="300" alt="스크린샷 2022-10-19 오후 7 14 01" src="https://user-images.githubusercontent.com/44957712/196663919-68b76570-365c-459d-8fb8-73dde7175a56.png">
