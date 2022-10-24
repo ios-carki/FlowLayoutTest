@@ -14,10 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        let vc = MainViewController()
-        let nav = UINavigationController(rootViewController: vc)
+        let vc = RxMainViewController()
+        //let nav = UINavigationController(rootViewController: vc)
         
-        window?.rootViewController = nav
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
 
