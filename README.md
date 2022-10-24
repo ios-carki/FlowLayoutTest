@@ -1,5 +1,8 @@
 # CompositionalLayout 실습
 
+### RxSwift 적용
+<img width="300" alt="스크린샷 2022-10-24 오후 5 03 57" src="https://user-images.githubusercontent.com/44957712/197477484-515e9735-f542-4bd0-a001-bdc508a79782.png">
+
 ### 설정 뷰 추가(Array Data + CollectionView Compositional Layout(Only Code Base)
 
 https://user-images.githubusercontent.com/44957712/196683782-2c6f2867-f1ab-4cf8-8e78-4316aafd2ed8.mov
