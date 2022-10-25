@@ -102,15 +102,23 @@ class RxMainViewController: BaseViewController {
             .bind(to: mySwitch.rx.isOn)
             .disposed(by: disposeBag)
         
+        //이게 맞나?
         mySwitch.rx.controlEvent(.valueChanged)
             .withLatestFrom(mySwitch.rx.value)
-            .subscribe { bool in
+            .bind(onNext: { bool in
                 if bool {
                     myLabel.text = "스위치 ON"
                 } else {
                     myLabel.text = "스위치 OFF"
                 }
-            }
+            })
+//            .subscribe { bool in // 이부분
+//                if bool {
+//                    myLabel.text = "스위치 ON"
+//                } else {
+//                    myLabel.text = "스위치 OFF"
+//                }
+//            }
             .disposed(by: disposeBag)
     }
     
@@ -145,7 +153,8 @@ class RxMainViewController: BaseViewController {
         
         mySignUpButton.rx.tap //touchUpInside
             .subscribe { _ in
-                self.showAlert()
+                let vc = RxSubjectViewController()
+                self.navigationController?.pushViewController(vc, animated: true) //push 화면전환
             }
             .disposed(by: disposeBag)
     }

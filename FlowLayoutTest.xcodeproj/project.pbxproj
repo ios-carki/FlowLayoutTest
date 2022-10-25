@@ -11,6 +11,9 @@
 		C35E87F129067044004FAA6D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C35E87F029067044004FAA6D /* RxSwift */; };
 		C35E87F329067061004FAA6D /* RxMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E87F229067061004FAA6D /* RxMainView.swift */; };
 		C35E87F52906706A004FAA6D /* RxMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E87F42906706A004FAA6D /* RxMainViewController.swift */; };
+		C35E88222907F421004FAA6D /* RxSubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E88212907F421004FAA6D /* RxSubjectViewModel.swift */; };
+		C35E88242907F701004FAA6D /* RxSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E88232907F701004FAA6D /* RxSubjectViewController.swift */; };
+		C35E88262907F720004FAA6D /* RxSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35E88252907F720004FAA6D /* RxSubjectView.swift */; };
 		C3A7FCA428FFECED0015F744 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCA328FFECED0015F744 /* BaseView.swift */; };
 		C3A7FCA628FFED510015F744 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A7FCA528FFED510015F744 /* MainView.swift */; };
 		C3A7FCA928FFEDD10015F744 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3A7FCA828FFEDD10015F744 /* SnapKit */; };
@@ -33,6 +36,9 @@
 /* Begin PBXFileReference section */
 		C35E87F229067061004FAA6D /* RxMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMainView.swift; sourceTree = "<group>"; };
 		C35E87F42906706A004FAA6D /* RxMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMainViewController.swift; sourceTree = "<group>"; };
+		C35E88212907F421004FAA6D /* RxSubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSubjectViewModel.swift; sourceTree = "<group>"; };
+		C35E88232907F701004FAA6D /* RxSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSubjectViewController.swift; sourceTree = "<group>"; };
+		C35E88252907F720004FAA6D /* RxSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSubjectView.swift; sourceTree = "<group>"; };
 		C3A7FCA328FFECED0015F744 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		C3A7FCA528FFED510015F744 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C3A7FCAA28FFEE3F0015F744 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,9 @@
 			children = (
 				C35E87F229067061004FAA6D /* RxMainView.swift */,
 				C35E87F42906706A004FAA6D /* RxMainViewController.swift */,
+				C35E88212907F421004FAA6D /* RxSubjectViewModel.swift */,
+				C35E88232907F701004FAA6D /* RxSubjectViewController.swift */,
+				C35E88252907F720004FAA6D /* RxSubjectView.swift */,
 			);
 			path = Rx;
 			sourceTree = "<group>";
@@ -209,12 +218,15 @@
 				C3F1DE9F28FE8526002AA543 /* FlowLayoutCollectionViewController.swift in Sources */,
 				C35E87F52906706A004FAA6D /* RxMainViewController.swift in Sources */,
 				C3A7FCB22900154E0015F744 /* SettingViewController.swift in Sources */,
+				C35E88262907F720004FAA6D /* RxSubjectView.swift in Sources */,
 				C3A7FCB0290015430015F744 /* SettingView.swift in Sources */,
 				C3A7FCA628FFED510015F744 /* MainView.swift in Sources */,
 				C3F1DE8A28FE84C7002AA543 /* ViewController.swift in Sources */,
 				C35E87F329067061004FAA6D /* RxMainView.swift in Sources */,
 				C3F1DE8628FE84C7002AA543 /* AppDelegate.swift in Sources */,
 				C3A7FCA428FFECED0015F744 /* BaseView.swift in Sources */,
+				C35E88242907F701004FAA6D /* RxSubjectViewController.swift in Sources */,
+				C35E88222907F421004FAA6D /* RxSubjectViewModel.swift in Sources */,
 				C3A7FCAB28FFEE3F0015F744 /* BaseViewController.swift in Sources */,
 				C3A7FCAD28FFEE470015F744 /* MainViewController.swift in Sources */,
 				C3F1DE8828FE84C7002AA543 /* SceneDelegate.swift in Sources */,
